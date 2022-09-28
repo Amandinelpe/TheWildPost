@@ -1,1 +1,10 @@
 
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    list-style: none;
+    background-color: green;
+    
+}
