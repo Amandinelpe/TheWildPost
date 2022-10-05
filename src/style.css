@@ -12,7 +12,8 @@ body {
     background-size: 100vw 100vh;
     margin: 0 auto;
     width: 90%;
-    font-family: 'noticia text, serif';
+    font-family: 'Noticia Text', serif;
+    font-size: 1rem;
 }
 
 .parent {
@@ -56,6 +57,7 @@ h2 {
 
 .div3 {
     grid-area: 1 / 2 / 3 / 5;
+    font-size: 1rem;
 }
 
 img {
@@ -85,7 +87,6 @@ img {
 
 .main-area > div {
     padding: 8px;
-    font-size: 12px;
 }
 
 .main-area p {
@@ -131,4 +132,8 @@ img {
 
 .main-area h1 {
     margin: 0;
+}
+
+.div4 {
+
 }
