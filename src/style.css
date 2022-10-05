@@ -39,9 +39,6 @@ body {
     grid-area: 1 / 2 / 3 / 5;
 }
 
-.div4 {
-    grid-area: 3 / 2 / 6 / 5;
-}
 
 img {
     width: 650px;
