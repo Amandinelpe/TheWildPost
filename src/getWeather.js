@@ -19,13 +19,13 @@ async function weatherIcons() {
     switch(data.current_weather.weathercode) {
         case 3:
         case 2:
-            weatherInfo.innerHTML = `${Math.round(data.current_weather.temperature)}°C &#x2601;&#xFE0F;`
+            weatherInfo.innerHTML += `${Math.round(data.current_weather.temperature)}°C &#x2601;&#xFE0F;`
             break;
         case 1:
-            weatherInfo.innerHTML = `${Math.round(data.current_weather.temperature)}°C &#127780;&#65039;`
+            weatherInfo.innerHTML += `${Math.round(data.current_weather.temperature)}°C &#127780;&#65039;`
             break;
         case 0:
-            weatherInfo.innerHTML = `${Math.round(data.current_weather.temperature)}°C &#9728;&#65039;`
+            weatherInfo.innerHTML += `${Math.round(data.current_weather.temperature)}°C &#9728;&#65039;`
             break;
         case 60:
         case 61:
@@ -35,18 +35,18 @@ async function weatherIcons() {
         case 65:
         case 80:
         case 81:
-            weatherInfo.innerHTML = `${Math.round(data.current_weather.temperature)}°C &#x1F327;&#xFE0F;`
+            weatherInfo.innerHTML += `${Math.round(data.current_weather.temperature)}°C &#x1F327;&#xFE0F;`
             break;
         case 29:
         case 91:
         case 92:
-            weatherInfo.innerHTML = `${Math.round(data.current_weather.temperature)}°C &#x26C8;&#xFE0F;`
+            weatherInfo.innerHTML += `${Math.round(data.current_weather.temperature)}°C &#x26C8;&#xFE0F;`
             break;
         case 45:
-            weatherInfo.innerHTML = `${Math.round(data.current_weather.temperature)}°C &#x1F32B;&#xFE0F;`
+            weatherInfo.innerHTML += `${Math.round(data.current_weather.temperature)}°C &#x1F32B;&#xFE0F;`
             break;
         default:
-            weatherInfo.innerHTML = `${Math.round(data.current_weather.temperature)}°C`
+            weatherInfo.innerHTML += `${Math.round(data.current_weather.temperature)}°C`
    
     }
 })

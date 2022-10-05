@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/checkbox.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +18,7 @@
   </head>
 
   <body>
-    <div class="container vintage">
+    <div class="container">
       <div class="pageContent">
         <header class="header">
           <div class="logotitle">
@@ -39,16 +40,15 @@
           </div>
           <div class="extras">
             <div id="modeSwitch">
-              <label class="switch"
-                ><input type="checkbox" id="myBtn" /><span id="vinMode"
-                  >Vintage mode</span
-                ></label
-              >
+              <label class="el-switch el-switch-yellow el-switch-sm">
+                <input type="checkbox" name="switch" id="myBtn" />
+                <span class="el-switch-style"></span> </label
+              ><span id="vinMode">Vintage mode</span>
             </div>
             <div id="today">
               <span id="longDate"></span><span id="shortDate"></span>
             </div>
-            <div id="weather"></div>
+            <div id="weather">Bordeaux,&nbsp;</div>
           </div>
           <div class="liveFeed">
             <hr />
@@ -79,40 +79,20 @@
         </header>
         <div class="articles">
           <div class="parent">
-            <div class="div1">
-              <h2>Elon Musk buys China</h2>
-              <img src="src/images/Elon.png" alt="elonMusk" id="elon" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-            <div class="div2">
-              <h2>WCS students appointed to lead mission to Mars</h2>
-              <img src="src/images/wcs.png" alt="wcs" id="wcs" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-
             <div class="div3">
-              <div class="main-title"><h1>LOUD NEWSPAPER TITLE</h1></div>
+              <div class="main-title">
+                <h1>
+                  Wild Code School students appointed to lead mission to Mars
+                </h1>
+              </div>
               <hr />
+
               <div class="main-area">
+                <img
+                  src="https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thenewyorker.png,fl_progressive,g_face,h_450,q_80,w_800/v1445469380/thenewyorker_movie-of-the-week-mission-to-mars.jpg"
+                  alt="Mission to Mars" />
                 <!-- <div class="main-picture"> -->
-                <img src="src/images/Microsoft.png" alt="Microsoft" />
-                <h1>Students trapped by their school.</h1>
+
                 <!-- </div> -->
                 <!-- <div class="main-text-one"> -->
                 <p>
@@ -123,16 +103,12 @@
                   code they want only on voice command. 100% autonomous, it
                   generates your code in just a few seconds. An incredible
                   evolution in the world of tech for developers and workers in
-                  the sector !
-                </p>
-                <p>
-                  Phasellus luctus congue dolor. Maecenas tincidunt viverra
-                  turpis, eget accumsan ipsum vehicula a. Nam a nisl lacus.
-                  Maecenas enim ipsum, viverra eget convallis sit amet, congue
-                  vitae felis. Nullam interdum eget massa quis ornare. Cras
-                  pretium vitae neque quis commodo. Proin lacinia dapibus
-                  dignissim. Duis ac tempus ante. Mauris egestas lectus eget
-                  nunc facilisis sodales.
+                  the sector ! This software is going to provide many people
+                  working in the world of technology. This innovation will be
+                  implemented from December 1, 2022, first at Microsoft. Bill
+                  Gates will present this new innovation on November 26, 2022 at
+                  Microsoft's own headquarters. Available for purchase for $1899
+                  from May 18, 2023.
                 </p>
                 <h3>Another interesting article</h3>
                 <p>
@@ -148,8 +124,8 @@
                 </p>
                 <!-- </div>
               <div class="second-article"> -->
+                <h2>Students tricked by their school</h2>
                 <img src="src/images/University.jpeg" alt="University" />
-                <h3>Students trapped by their school.</h3>
                 <p>
                   This Friday, September 28, Bordeaux Wild Code School played a
                   "holy joke" to the 60 new students coming to learn tech jobs.
@@ -174,6 +150,36 @@
                 <h2>Students trapped by their school.</h2>
                 <p>This Friday, September 28, Bordeaux Wild Code School played a "holy joke" to the 60 new students coming to learn tech jobs. As part of the 2022 Back-to-School Challenge and based on a certain amount of personal data, the Wild Code School revealed their learning profile and predicted their start of career, deliberately marked "success" or "failure". The pot of roses was only revealed at the end of the day. The goal: to make students aware that their personal data can be used for good or bad purposes.</p>
             </div> -->
+            </div>
+            <div class="div1">
+              <h2>Elon Musk buys China</h2>
+              <img src="src/images/Elon.png" alt="elonMusk" id="elon" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div class="div2">
+              <h2>Microsoft trying to wow customers with new technology</h2>
+              <img
+                src="https://blockchainstock.azureedge.net/features/F72BC57FEBC9177BC2154D3D2A37782CDB42C9247530945F69B5638B47D46B2C.jpg"
+                alt="Microsoft" />
+              <p>
+                Bill Gates, one of the most influential personalities in the
+                world of High Tech, best known for having developed Microsoft,
+                is now embarking on a new technology. Bill Gates creates new
+                software that allows users to make a voice request to get the
+                code they want only on voice command. 100% autonomous, it
+                generates your code in just a few seconds. An incredible
+                evolution in the world of tech for developers and workers in the
+                sector !This innovation will be implemented from December 1,
+                2022, first at Microsoft.
+              </p>
             </div>
           </div>
         </div>
