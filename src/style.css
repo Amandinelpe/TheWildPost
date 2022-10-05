@@ -12,6 +12,7 @@ body {
     background-size: 100vw 100vh;
     margin: 0 auto;
     width: 90%;
+    font-family: 'noticia text, serif';
 }
 
 .parent {
@@ -25,22 +26,36 @@ body {
     grid-row-gap: 20px;
 }
 
+h2 {
+    text-align: center;
+}
+
 .div1 {
-    background-color: #3F3329;
+    background-color: none;
     grid-area: 1 / 5 / 6 / 6;
+    text-align: justify;
+}
+
+#elon {
+    width: 200px;
+    height: 150px;
+    text-align: center;
 }
 
 .div2 {
-    background-color: #3F3329;
+    background-color: none;
     grid-area: 1 / 1 / 6 / 2;
+    text-align: justify;
 }
+
+#wcs {
+    width: 150px;
+    height: 150px;
+}
+
 
 .div3 {
     grid-area: 1 / 2 / 3 / 5;
-}
-
-.div4 {
-    grid-area: 3 / 2 / 6 / 5;
 }
 
 img {
