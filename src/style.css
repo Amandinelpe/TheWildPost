@@ -12,4 +12,84 @@ body {
     background-size: 100vw 100vh;
     margin: 0 auto;
     width: 90%;
+    
 }
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    list-style: none;
+    border-radius: 20px;
+    min-height: 20px; 
+    
+    
+   }
+     
+
+
+a{
+   text-decoration: none;
+   color: black;
+}
+ 
+a:hover{
+    color: orange;
+    
+}
+
+nav{
+    border-radius: 200px;
+    background-color: #c2baaa;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.logo{
+    mix-blend-mode: multiply;
+}
+
+.logotitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul:hover{
+    min-height: 55px; 
+    transition: min-height 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 600px) { 
+    .logo { 
+     height: 50px;
+     
+    } 
+  }
+  @media screen and (max-width: 600px) { 
+     
+     .navEffect {
+        display: none
+        
+     }
+    
+    } 
+  
+
+        
+        
+.hamburger-menu{
+    display: none;
+
+}    
+   
+   
+@media screen and (max-width: 600px) { 
+
+    .hamburger-menu{
+        display: inline-block
+        
+    }
+
+    }
