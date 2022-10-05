@@ -347,3 +347,18 @@ img {
 .main-area h1 {
     margin: 0;
 } */
+
+footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  flex-direction: column;
+  border-top: 1.1px solid;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
