@@ -53,12 +53,82 @@ h2 {
     height: 150px;
 }
 
+
 .div3 {
-    background-color: darkgoldenrod;
     grid-area: 1 / 2 / 3 / 5;
 }
 
-.div4 {
-    background-color: darkgreen;
-    grid-area: 3 / 2 / 6 / 5;
+img {
+    width: 650px;
+    height: 300px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.main-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: justify;
+    grid-template-areas:
+          "main-picture     main-picture    second-text-one     second-article"
+          "main-text-one    main-text-two   second-text-one     second-article";
+    border-top: #3F3329 1px solid;
+}
+
+.main-area > div {
+    padding: 8px;
+    font-size: 12px;
+}
+
+.main-area p {
+    margin: 0;
+}
+   
+.main-area .main-picture { 
+    grid-area: main-picture;
+}
+.main-area .main-text-one { 
+    grid-area: main-text-one; 
+}
+.main-area .main-text-two { 
+    grid-area: main-text-two; 
+}
+.main-area .second-text-one { 
+    grid-area: second-text-one; 
+}
+.main-area .second-text-two { 
+    grid-area: second-text-two; 
+}
+.main-area .second-article { 
+    grid-area: second-article;
+    height: 200px;
+}
+
+.main-picture img {
+    width:100%;
+    height: auto;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.second-article img {
+    width: 100%;
+    height: auto;
+}
+
+.article {
+    padding-top: 20px;
+    border-top: #3F3329 1px solid;
+}
+
+.main-area h1 {
+    margin: 0;
 }
