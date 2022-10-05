@@ -189,8 +189,9 @@ li:hover {
   div.container {
     overflow-y: hidden;
 }
+
 div.pageContent {
-  overflow-y: hidden;
+  overflow-y: auto;
   height: 95vh;
   margin: 2vh auto;
 }
@@ -236,6 +237,10 @@ nav {
   display: none;
 } 
 
+.articles {
+overflow-y: hidden;
+}
+
 .parent {
     display: grid;
     padding: 15px;
@@ -244,9 +249,8 @@ nav {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 20px;
-    overflow-y: auto;
-    height: calc(100vh - 20vh); 
-
+    overflow-y: hidden;
+    height: auto;
 }
 
 .div1 {
