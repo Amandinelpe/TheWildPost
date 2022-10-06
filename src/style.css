@@ -17,6 +17,7 @@ body {
   font-size: 1em;
   color: var(--regular-text-color);
   line-height: 1.6;
+  cursor: default;
 }
 
 div.container {
@@ -121,13 +122,13 @@ a {
   gap: 4px;
 }
 
-img {
+.zoomy {
   width: 100%;
   height: auto;
   z-index: 1;
 }
 
-img:hover {
+.zoomy {
   cursor: zoom-in;
 }
 
@@ -316,7 +317,6 @@ img {
 }
 }
 
-
 /* ZOOM IMAGES */
 
 .img-magnifier-container {
@@ -325,6 +325,7 @@ img {
 
 .img-magnifier-glass {
   position: absolute;
+  z-index: 1;
   border: 3px solid #000;
   border-radius: 50%;
   cursor: none;
@@ -332,3 +333,7 @@ img {
   width: 12rem;
   height: 12rem;
 }
+
+/* .img-magnifier-glass {
+  display: none;
+} */

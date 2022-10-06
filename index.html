@@ -89,11 +89,12 @@
 
               <div class="main-area">
                 <div class="img-magnifier-container">
-                  <div id="glass"></div>
+                  <div id="glass-mars"></div>
                   <img
                     src="https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thenewyorker.png,fl_progressive,g_face,h_450,q_80,w_800/v1445469380/thenewyorker_movie-of-the-week-mission-to-mars.jpg"
                     alt="Mission to Mars"
-                    id="mars" />
+                    id="mars"
+                    class="zoomy" />
                 </div>
                 <p>
                   Bill Gates, one of the most influential personalities in the
@@ -125,10 +126,14 @@
                 <!-- </div>
               <div class="second-article"> -->
                 <h2>Students tricked by their school</h2>
-                <img
-                  src="src/images/University.jpeg"
-                  alt="University"
-                  id="university" />
+                <div class="img-magnifier-container">
+                  <div id="glass-university"></div>
+                  <img
+                    src="src/images/University.jpeg"
+                    alt="University"
+                    id="university"
+                    class="zoomy" />
+                </div>
                 <p>
                   This Friday, September 28, Bordeaux Wild Code School played a
                   "holy joke" to the 60 new students coming to learn tech jobs.
@@ -156,7 +161,14 @@
             </div>
             <div class="div1">
               <h2>Elon Musk buys China</h2>
-              <img src="src/images/Elon.png" alt="elonMusk" id="elon" />
+              <div class="img-magnifier-container">
+                <div id="glass-elon"></div>
+                <img
+                  src="src/images/Elon.png"
+                  alt="elonMusk"
+                  id="elon"
+                  class="zoomy" />
+              </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -169,10 +181,14 @@
             </div>
             <div class="div2">
               <h2>Microsoft trying to get back in the game</h2>
-              <img
-                src="https://blockchainstock.azureedge.net/features/F72BC57FEBC9177BC2154D3D2A37782CDB42C9247530945F69B5638B47D46B2C.jpg"
-                alt="Microsoft"
-                id="microsoft" />
+              <div class="img-magnifier-container">
+                <div id="glass-microsoft"></div>
+                <img
+                  src="https://blockchainstock.azureedge.net/features/F72BC57FEBC9177BC2154D3D2A37782CDB42C9247530945F69B5638B47D46B2C.jpg"
+                  alt="Microsoft"
+                  id="microsoft"
+                  class="zoomy" />
+              </div>
               <p>
                 Bill Gates, one of the most influential personalities in the
                 world of High Tech, best known for having developed Microsoft,
@@ -194,6 +210,7 @@
       </div>
     </div>
     <script src="./src/index.js"></script>
+    <script src="./src/zoom.js"></script>
     <!-- <script src="./src/getWeather.js"></script> -->
   </body>
 </html>
