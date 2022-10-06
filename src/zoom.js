@@ -22,7 +22,6 @@ images.forEach(function(el) {
   bw = 3;
   w = glass.offsetWidth / 2;
   h = glass.offsetHeight / 2;
-  console.log(w, h, "offset");
   /*execute a function when someone moves the magnifier glass over the image:*/
   glass.addEventListener("mousemove", moveMagnifier);
   img.addEventListener("mousemove", moveMagnifier);
@@ -45,12 +44,12 @@ images.forEach(function(el) {
     /*set the position of the magnifier glass:*/
     glass.style.left = (x - w) + "px";
     glass.style.top = (y - h) + "px";
-    console.log(glass.style.left, glass.style.top, "glass left top");
-    // console.log(glass.style.left, glass.style.top);
     /*display what the magnifier glass "sees":*/
     glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
-    console.log(glass.style.backgroundPosition, "glass background pos");
     glass.addEventListener("mouseleave", () => {
+      glass.classList.remove("img-magnifier-glass");
+    });
+    window.addEventListener("click", () => {
       glass.classList.remove("img-magnifier-glass");
     });
   }
@@ -65,7 +64,6 @@ images.forEach(function(el) {
     /*consider any page scrolling:*/
     x = x - window.pageXOffset;
     y = y - window.pageYOffset;
-    console.log(x, y, "x y");
     return {x : x, y : y};
   }
 })

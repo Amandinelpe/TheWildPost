@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #ece0d0;
+  --primary-color: #FCF1E4;
   --secondary-color: #c8a981;
   --primary-text-color: #271D16;
   --secondary-text-color: #3F3329;
@@ -29,26 +29,26 @@ div.container {
   margin: 0 auto;
   width: 100%;
   padding: 0px;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .vintage {
   background-image: url('/src/images/paper.jpg');
   background-size: 100vw 100vh;
   background-attachment: fixed;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: var(--primary-text-color);
   font-family: var(--vintage-font-family);
 }
 
 .vintageStyle {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: var(--primary-text-color);
   font-family: var(--vintage-font-family);
 }
 
 .pageContent {
-  width: 90%;
+  width: 85%;
   margin: 2% auto;
   overflow-y: auto;
   height: 100vh;
@@ -74,7 +74,6 @@ ul {
     justify-content: space-around;
     font-size: 1rem;
     list-style: none;
-    border-radius: 20px;
     min-height: 1vh;
     transition: min-height 0.3s, font-size 0.3s ease-in-out;
     padding-left: 0px;
@@ -139,8 +138,8 @@ a {
   cursor: zoom-in;
 }
 
-ul.navEffect:hover {
-    min-height: 4vh; 
+ul:hover {
+    min-height: 7vh; 
     font-size: 1.1rem;
     transition: min-height 0.3s, font-size 0.3s ease-in-out;
 }
@@ -150,7 +149,7 @@ li:hover {
 }
 
 .navEffect {
-  display: none
+  display: none;
 }
 
 .burgerMenu {
@@ -159,8 +158,8 @@ li:hover {
   flex-direction: column;
   align-items: flex-start;
   gap: 0px;
-  top: 5px;
-  left: 5px;
+  top: 0px;
+  left: 0px;
   z-index: 1;
 }
 
@@ -189,7 +188,6 @@ li:hover {
   font-size: 1.1rem;
   padding: 10px;
   margin: 0px;
-  background-color: white;
 }
 
 .articles {
@@ -264,6 +262,7 @@ footer p {
     overflow-y: auto;
     margin: 2vh auto;
     height: 95vh;
+    width: 90%;
   }
 
   .logotitle {
@@ -271,10 +270,13 @@ footer p {
   }
 
 #navDesktop {
-  width: 90%;
-  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 10px;
   -webkit-box-shadow: 5px 5px 10px 5px gray; 
-  box-shadow: 5px 5px 10px 5px gray;
+  box-shadow: 5px 5px 10px 5px gray; */
 }
 
 .burgerMenu {
@@ -286,15 +288,18 @@ footer p {
   justify-content: center;
   align-items: center;
   margin-bottom: 3vh;
+  z-index: 1;
 }
 
 .sticky {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
+  left: -8%;
+  width: 115%;
   z-index: 1;
+  background-color: white;
+  height: 6vh;
+  border-radius: 0px;
 }
 
 .navbarOffsetMargin {
@@ -303,6 +308,12 @@ footer p {
 
 .navEffect {
   display: flex;
+  width: 90%;
+  height: 6vh;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px 5px gray; 
+  box-shadow: 5px 5px 10px 5px gray;
+
 }
 
 #vinMode {
