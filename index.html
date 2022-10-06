@@ -14,7 +14,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap"
       rel="stylesheet" />
-    <title>The Wild Post</title>
+    <title>The Wild Post - Your daily dose of absolutely wild news</title>
   </head>
 
   <body>
@@ -22,7 +22,7 @@
       <div class="pageContent">
         <header class="header">
           <div class="logotitle">
-            <img class="logo" src="/src/images/Logo.png" />
+            <img class="logo" src="/src/images/Logo.png" id="logo" />
           </div>
           <div class="navBar">
             <nav>
@@ -48,7 +48,7 @@
             <div id="today">
               <span id="longDate"></span><span id="shortDate"></span>
             </div>
-            <div id="weather">Bordeaux,&nbsp;</div>
+            <div id="weather"><span id="location">Bordeaux,&nbsp;</span></div>
           </div>
           <div class="liveFeed">
             <hr />
@@ -88,13 +88,13 @@
               <hr />
 
               <div class="main-area">
-                <img
-                  src="https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thenewyorker.png,fl_progressive,g_face,h_450,q_80,w_800/v1445469380/thenewyorker_movie-of-the-week-mission-to-mars.jpg"
-                  alt="Mission to Mars" />
-                <!-- <div class="main-picture"> -->
-
-                <!-- </div> -->
-                <!-- <div class="main-text-one"> -->
+                <div class="img-magnifier-container">
+                  <div id="glass"></div>
+                  <img
+                    src="https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thenewyorker.png,fl_progressive,g_face,h_450,q_80,w_800/v1445469380/thenewyorker_movie-of-the-week-mission-to-mars.jpg"
+                    alt="Mission to Mars"
+                    id="mars" />
+                </div>
                 <p>
                   Bill Gates, one of the most influential personalities in the
                   world of High Tech, best known for having developed Microsoft,
@@ -125,7 +125,10 @@
                 <!-- </div>
               <div class="second-article"> -->
                 <h2>Students tricked by their school</h2>
-                <img src="src/images/University.jpeg" alt="University" />
+                <img
+                  src="src/images/University.jpeg"
+                  alt="University"
+                  id="university" />
                 <p>
                   This Friday, September 28, Bordeaux Wild Code School played a
                   "holy joke" to the 60 new students coming to learn tech jobs.
@@ -165,10 +168,11 @@
               </p>
             </div>
             <div class="div2">
-              <h2>Microsoft trying to wow customers with new technology</h2>
+              <h2>Microsoft trying to get back in the game</h2>
               <img
                 src="https://blockchainstock.azureedge.net/features/F72BC57FEBC9177BC2154D3D2A37782CDB42C9247530945F69B5638B47D46B2C.jpg"
-                alt="Microsoft" />
+                alt="Microsoft"
+                id="microsoft" />
               <p>
                 Bill Gates, one of the most influential personalities in the
                 world of High Tech, best known for having developed Microsoft,
@@ -183,10 +187,13 @@
             </div>
           </div>
         </div>
+        <footer>
+          <p>📰 © 2021 Wild Post, Inc.</p>
+          <p>📍 171 rue Lucien Faure, 33000 Bordeaux.</p>
+        </footer>
       </div>
     </div>
-
     <script src="./src/index.js"></script>
-    <script src="./src/getWeather.js"></script>
+    <!-- <script src="./src/getWeather.js"></script> -->
   </body>
 </html>

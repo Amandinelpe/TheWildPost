@@ -197,11 +197,11 @@ label.el-checkbox {
 .el-checkbox.el-checkbox-yellow > input[type="checkbox"] + label:hover:before,
 .el-radio.el-radio-yellow > input[type="radio"]:checked + label:before,
 .el-checkbox.el-checkbox-yellow > input[type="checkbox"]:checked + label:before {
-  border-color: var(--secondary-text-color);
+  border-color: var(--secondary-color);
 }
 .el-checkbox.el-checkbox-yellow > input[type="checkbox"]:checked + label:before,
 .el-radio.el-radio-yellow > input[type="radio"] + label:after {
-  background: var(--secondary-text-color);
+  background: var(--secondary-color);
 }
 .el-radio.el-radio-yellow > input[type="radio"][disabled] + label:hover:before,
 .el-checkbox.el-checkbox-yellow > input[type="checkbox"][disabled] + label:hover:before {
@@ -292,7 +292,7 @@ label.el-checkbox {
   background-color: #f9b3b3;
 }
 .el-switch.el-switch-yellow > input[type="checkbox"]:checked + .el-switch-style {
-  background-color: var(--secondary-text-color);
+  background-color: var(--secondary-color);
 }
 .el-switch.el-switch-yellow > input[type="checkbox"]:checked[disabled] + .el-switch-style {
   background-color: #fbeac1;
