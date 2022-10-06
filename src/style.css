@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #E8D4B9;
+  --primary-color: #ece0d0;
   --secondary-color: #c8a981;
   --primary-text-color: #271D16;
   --secondary-text-color: #3F3329;
@@ -35,6 +35,13 @@ div.container {
   background-image: url('/src/images/paper.jpg');
   background-size: 100vw 100vh;
   background-attachment: fixed;
+  background-color: var(--secondary-color);
+  color: var(--primary-text-color);
+  font-family: var(--vintage-font-family);
+}
+
+.vintageStyle {
+  background-color: var(--secondary-color);
   color: var(--primary-text-color);
   font-family: var(--vintage-font-family);
 }
@@ -69,6 +76,7 @@ ul {
     border-radius: 20px;
     min-height: 1vh;
     transition: min-height 0.3s, font-size 0.3s ease-in-out;
+    padding-left: 0px;
   }
     
 a {
@@ -78,8 +86,8 @@ a {
 
 .logo {
     mix-blend-mode: multiply;
-      height: auto;
-      width: clamp(200px, 50%, 380px);
+    height: auto;
+    width: clamp(200px, 50%, 380px);
 }
 
 .logotitle {
@@ -124,14 +132,13 @@ a {
 img {
   width: 100%;
   height: auto;
-  z-index: 1;
 }
 
 img:hover {
   cursor: zoom-in;
 }
 
-ul:hover {
+ul.navEffect:hover {
     min-height: 4vh; 
     font-size: 1.1rem;
     transition: min-height 0.3s, font-size 0.3s ease-in-out;
@@ -145,28 +152,43 @@ li:hover {
   display: none
 }
 
-.hamburger-menu {
+.burgerMenu {
   position: fixed;
-  top: 2px;
-  left: 2px;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0px;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
 }
 
-.burger {
-    display: none;
-    width: 50px;
-    height: 50px;
-    border: none;
-    padding: 0px;
-    margin: 20px;
-    background: linear-gradient(
-      to bottom, 
-      #3D0E61, #3D0E61 20%, 
-      white 20%, white 40%, 
-      #3D0E61 40%, #3D0E61 60%, 
-      white 60%, white 80%, 
-      #3D0E61 80%, #3D0E61 100%
-    );
+#navBurger {
+  display: none;
+  margin: 0;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  line-height: 2.5rem;
+  background-color: white;
+  opacity: 92%;
+}
+
+.navDisplay {
+  display: block;
+}
+
+.navEffectMobile {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.fa-bars {
+  font-size: 1.1rem;
+  padding: 10px;
+  margin: 0px;
+  background-color: white;
 }
 
 .articles {
@@ -229,25 +251,33 @@ footer p {
 } */
 
 @media screen and (min-width: 769px) {
+  body {
+    overflow: auto;
+    
+  }
   div.container {
     overflow-y: hidden;
   }
 
   div.pageContent {
     overflow-y: auto;
-    height: 95vh;
     margin: 2vh auto;
+    height: 95vh;
   }
 
   .logotitle {
     margin-bottom: 2vh;
   }
 
-nav {
-  width: 100%;
-  /* border-radius: 10px; */
+#navDesktop {
+  width: 90%;
+  border-radius: 10px;
   -webkit-box-shadow: 5px 5px 10px 5px gray; 
   box-shadow: 5px 5px 10px 5px gray;
+}
+
+.burgerMenu {
+  display: none;
 }
 
 .navBar {
@@ -255,6 +285,19 @@ nav {
   justify-content: center;
   align-items: center;
   margin-bottom: 3vh;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+.navbarOffsetMargin {
+  padding-top: 45px;
 }
 
 .navEffect {

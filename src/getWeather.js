@@ -2,20 +2,19 @@ const weatherInfo = document.querySelector('#weather');
 const longDate = document.querySelector('#longDate');
 const shortDate = document.querySelector('#shortDate');
 
-weatherIcons();
+// weatherIcons();
 
-async function getWeather() {
-    let resp = await fetch("https://api.open-meteo.com/v1/forecast?latitude=44.8378&longitude=-0.5792&current_weather=true");
-    let data = await resp.json();
-    return data;
-  }
+// async function getWeather() {
+//     let resp = await fetch("https://api.open-meteo.com/v1/forecast?latitude=44.8378&longitude=-0.5792&current_weather=true");
+//     let data = await resp.json();
+//     return data;
+//   }
 
 // for adding more cases :
 // https://developer.weatherunlocked.com/documentation/localweather/resources
 
 async function weatherIcons() {
     await getWeather().then(data => {
-        console.log(data.current_weather.weathercode);
     switch(data.current_weather.weathercode) {
         case 3:
         case 2:
