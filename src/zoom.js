@@ -1,7 +1,6 @@
 
 
-// ADJUST FOR MOBILE !!!!
-
+// Future features --> adapt to mobile
 
 const images = document.querySelectorAll(".zoomy");
 images.forEach(function(el) {

@@ -13,6 +13,25 @@ function vintage() {
   
 }
 
+const video = document.getElementById("trump");
+
+video.addEventListener("mouseover", function() {
+	this.play();
+});
+video.addEventListener("mouseleave", function() {
+	this.pause();
+});
+
+// mobile
+
+video.addEventListener("touchstart", function() {
+	this.play();
+});
+video.addEventListener("touchend", function() {
+	this.pause();
+});
+
+
 // function vintage() {
 //     const faFa = document.querySelector(".fa-bars");
 //     const navBurger = document.querySelector("#navBurger");
