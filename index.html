@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/checkbox.css" />
+    <link rel="stylesheet" href="src/modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,143 +16,125 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap"
       rel="stylesheet" />
-    <title>The Wild Post</title>
+    <script
+      src="https://kit.fontawesome.com/1849dc458c.js"
+      crossorigin="anonymous"></script>
+    <title>The Wild Post - Your daily dose of utterly wild news</title>
   </head>
 
   <body>
-    <div class="container vintage">
+    <div class="container">
       <div class="pageContent">
         <header class="header">
           <div class="logotitle">
-            <img class="logo" src="/src/images/Logo.png" />
+            <img class="logo" src="/src/images/Logo.png" id="logo" />
           </div>
-          <div class="navBar">
-            <nav>
-              <ul class="navEffect">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">World</a></li>
-                <li><a href="#">Local</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">Science</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Inscription</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="extras">
-            <div id="modeSwitch">
-              <label class="switch"
-                ><input type="checkbox" id="myBtn" /><span id="vinMode"
-                  >Vintage mode</span
-                ></label
-              >
-            </div>
-            <div id="today">
-              <span id="longDate"></span><span id="shortDate"></span>
-            </div>
-            <div id="weather"></div>
-          </div>
-          <div class="liveFeed">
-            <hr />
-            <hr />
-            <marquee
-              ><b><span style="color: red">•LIVE:</span></b> Giant asteroid on
-              collision course with Earth | Elon Musk buys China | Wild Code
-              School students appointed to lead mission to Mars | Godzilla is
-              back | Wild Code School students tricked by their school</marquee
-            >
-            <hr />
-          </div>
-          <button class="hamburger-menu">
-            <nav>
-              <h3>Menu</h3>
-              <ul class="burger">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">World</a></li>
-                <li><a href="#">Local</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">Science</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Inscription</a></li>
-              </ul>
-            </nav>
-          </button>
         </header>
+        <div class="navBar">
+          <nav id="navDesktop">
+            <ul class="navEffect">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">World</a></li>
+              <li><a href="#">Local</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Tech</a></li>
+              <li><a href="#">Science</a></li>
+              <li><a href="#">Sports</a></li>
+              <li>
+                <a href="#" class="modalBtn"
+                  >Contact&nbsp;<i class="far fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="burgerMenu">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          <nav id="navBurger">
+            <ul class="navEffectMobile">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">World</a></li>
+              <li><a href="#">Local</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Tech</a></li>
+              <li><a href="#">Science</a></li>
+              <li><a href="#">Sports</a></li>
+              <li>
+                <a href="#" class="modalBtn"
+                  >Contact&nbsp;<i class="far fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="extras">
+          <div id="modeSwitch">
+            <label class="el-switch el-switch-yellow el-switch-sm">
+              <input type="checkbox" name="switch" id="myBtn" />
+              <span class="el-switch-style"></span> </label
+            ><span id="vinMode">Vintage mode</span>
+          </div>
+          <div id="today">
+            <span id="longDate"></span><span id="shortDate"></span>
+          </div>
+          <div id="weather"><span id="location">Bordeaux,&nbsp;</span></div>
+        </div>
+        <div class="liveFeed">
+          <hr />
+          <hr />
+          <marquee
+            ><b><span style="color: red">•LIVE:</span></b> Giant asteroid on
+            collision course with Earth | Elon Musk buys China | Wild Code
+            School students appointed to lead mission to Mars | Godzilla is back
+            | Wild Code School students tricked by their school</marquee
+          >
+          <hr />
+        </div>
+
         <div class="articles">
           <div class="parent">
-            <div class="div1">
-              <h2>Elon Musk buys China</h2>
-              <img src="src/images/Elon.png" alt="elonMusk" id="elon" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-            <div class="div2">
-              <h2>WCS students appointed to lead mission to Mars</h2>
-              <img src="src/images/wcs.png" alt="wcs" id="wcs" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-
             <div class="div3">
-              <div class="main-title"><h1>LOUD NEWSPAPER TITLE</h1></div>
+              <div class="main-title">
+                <h1>
+                  Wild Code School students appointed to lead mission to Mars
+                </h1>
+              </div>
               <hr />
+
               <div class="main-area">
-                <!-- <div class="main-picture"> -->
-                <img src="src/images/Microsoft.png" alt="Microsoft" />
-                <h1>Students trapped by their school.</h1>
-                <!-- </div> -->
-                <!-- <div class="main-text-one"> -->
+                <div class="img-magnifier-container">
+                  <div id="glass-mars"></div>
+                  <img
+                    src="src/images/mars.JPG"
+                    alt="Mission to Mars"
+                    id="mars"
+                    class="zoomy" />
+                </div>
                 <p>
-                  Bill Gates, one of the most influential personalities in the
-                  world of High Tech, best known for having developed Microsoft,
-                  is now embarking on a new technology. Bill Gates creates new
-                  software that allows users to make a voice request to get the
-                  code they want only on voice command. 100% autonomous, it
-                  generates your code in just a few seconds. An incredible
-                  evolution in the world of tech for developers and workers in
-                  the sector !
+                  Seven students from the Wild Code School were selected by NASA
+                  to participate and lead a revolutionary mission to Mars. Four
+                  students will embark on a newly constructed high-technology
+                  spacecraft and three students will lead the assignment from
+                  the Mission Control Center in Bordeaux. The students will
+                  first undergo intense training lasting several months,
+                  including demanding physical evaluations. Additionally, during
+                  that time, the prospect of potential sites to be explored
+                  during the mission will be done using NASA’s Perseverance
+                  rover. An Open Day will take place at the Mission Control
+                  Center in Bordeaux on October 16th, where visitors will
+                  discover all the novel technologies related to the expedition.
+                  Stay tuned for more updates. We cannot wait to follow the
+                  experience of our students!
                 </p>
-                <p>
-                  Phasellus luctus congue dolor. Maecenas tincidunt viverra
-                  turpis, eget accumsan ipsum vehicula a. Nam a nisl lacus.
-                  Maecenas enim ipsum, viverra eget convallis sit amet, congue
-                  vitae felis. Nullam interdum eget massa quis ornare. Cras
-                  pretium vitae neque quis commodo. Proin lacinia dapibus
-                  dignissim. Duis ac tempus ante. Mauris egestas lectus eget
-                  nunc facilisis sodales.
-                </p>
-                <h3>Another interesting article</h3>
-                <p>
-                  Cras dignissim gravida blandit. Mauris dapibus nunc in
-                  ullamcorper varius. Nam condimentum gravida nulla vitae
-                  gravida. Etiam in sagittis ipsum. Maecenas nec elit ac lacus
-                  ullamcorper scelerisque vitae sed elit. Ut vel sagittis nisi.
-                  Aenean maximus ultricies ex et dapibus. Nulla dignissim purus
-                  quis cursus ultrices. Nam fermentum fermentum neque, sed
-                  pellentesque diam auctor aliquet. Pellentesque habitant morbi
-                  tristique senectus et netus et malesuada fames ac turpis
-                  egestas.
-                </p>
-                <!-- </div>
-              <div class="second-article"> -->
-                <img src="src/images/University.jpeg" alt="University" />
-                <h3>Students trapped by their school.</h3>
+                <h2>Students tricked by their school</h2>
+                <!-- <div class="img-magnifier-container">
+                  <div id="glass-university"></div>
+                  <img
+                    src="src/images/University.jpeg"
+                    alt="University"
+                    id="university"
+                    class="zoomy" />
+                </div> -->
                 <p>
                   This Friday, September 28, Bordeaux Wild Code School played a
                   "holy joke" to the 60 new students coming to learn tech jobs.
@@ -161,26 +146,160 @@
                   students aware that their personal data can be used for good
                   or bad purposes.
                 </p>
-                <!-- </div> -->
+                <h2>Macron says goodbye to the cravate</h2>
+                <div class="img-magnifier-container">
+                  <div id="glass-macron"></div>
+                  <img
+                    src="src/images/macron.JPG"
+                    alt="New portrait of Macron"
+                    id="macron"
+                    class="zoomy" />
+                </div>
+                <p>
+                  The french president Emanuel Macron after the recent
+                  reelection gained a significant amount of extra confidence in
+                  his competences. Inspired by Volodymyr Zelenskyy’s style, he
+                  announced he was ditching the cravate and trying out a more
+                  laid back approach. In one of recent interviews, he mentioned
+                  that he believed such move was necessary so that the French
+                  citizens would feel closer to their leader. The new portrait
+                  of Macron (see picture above) will be replacing the current
+                  boring one in town halls around France in the upcoming weeks.
+                </p>
               </div>
-              <!-- <div class="article">
-                <img src="src/images/Microsoft.jpg" alt= "Microsoft"/>
-                <h2>New innovation for Microsoft founder !</h2>
-                <p>Bill Gates, one of the most influential personalities in the world of High Tech, best known for having developed Microsoft, is now embarking on a new technology. Bill Gates creates new software that allows users to make a voice request to get the code they want only on voice command. 100% autonomous, it generates your code in just a few seconds. An incredible evolution in the world of tech for developers and workers in the sector !</p>
+              <br />
+              <hr />
+
+              <div class="archives">
+                <h1>The Wild Post Archives</h1>
+                <p>
+                  Watch Donald Trump announce the death of Abu Bakr al-Baghdadi.
+                </p>
+
+                <video id="trump" controls autoplay width="100%">
+                  <source src="src/images/trump.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <hr />
             </div>
-            
-            <div class="article"> 
-                <image src="src/images/university.jpg" alt= "University"/>
-                <h2>Students trapped by their school.</h2>
-                <p>This Friday, September 28, Bordeaux Wild Code School played a "holy joke" to the 60 new students coming to learn tech jobs. As part of the 2022 Back-to-School Challenge and based on a certain amount of personal data, the Wild Code School revealed their learning profile and predicted their start of career, deliberately marked "success" or "failure". The pot of roses was only revealed at the end of the day. The goal: to make students aware that their personal data can be used for good or bad purposes.</p>
-            </div> -->
+            <br />
+            <div class="div1">
+              <h2>Elon Musk buys China</h2>
+              <div class="img-magnifier-container">
+                <div id="glass-elon"></div>
+                <img
+                  src="src/images/Elon.png"
+                  alt="elonMusk"
+                  id="elon"
+                  class="zoomy" />
+              </div>
+              <p>
+                Surprise? For many this is no longer the case when it comes to
+                Elon. After trying to buy Tweeter, the nutty billionaire and
+                father of X Æ A-12 is on his way to purchase China. Could this
+                be a major twist in the life of the famous creator of Tesla and
+                SpaceX? Experts suspect that the move was driven largely by the
+                desire to gain complete control over TikTok. Currently in
+                negotiations with the personal accountant of the Chinese
+                president Xi Jinping, Elon Musk should soon deliver on this
+                takeover which could be worth hundreds of billions of dollars.
+                After having flip-flopped on the takeover of Twitter, the
+                entrepreneur is determined to reserve a certain future for
+                China.
+              </p>
+            </div>
+            <div class="div2">
+              <h2>Microsoft trying to get back in the game</h2>
+              <div class="img-magnifier-container">
+                <div id="glass-microsoft"></div>
+                <img
+                  src="https://blockchainstock.azureedge.net/features/F72BC57FEBC9177BC2154D3D2A37782CDB42C9247530945F69B5638B47D46B2C.jpg"
+                  alt="Microsoft"
+                  id="microsoft"
+                  class="zoomy" />
+              </div>
+              <p>
+                Bill Gates, one of the most influential personalities in the
+                world of High Tech, best known for having developed Microsoft,
+                is now embarking on a new technology. Bill Gates creates new
+                software that allows users to make a voice request to get the
+                code they want only on voice command. 100% autonomous, it
+                generates your code in just a few seconds. An incredible
+                evolution in the world of tech for developers and workers in the
+                sector !This innovation will be implemented from December 1,
+                2022, first at Microsoft.
+              </p>
             </div>
           </div>
         </div>
+        <footer>
+          <p>📰 © 2021 Wild Post, Inc.</p>
+          <p>📍 171 rue Lucien Faure, 33000 Bordeaux.</p>
+        </footer>
       </div>
     </div>
+    <div id="simpleModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="closeBtn">&times;</span>
+          <h2>Contact us</h2>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label
+              >First Name
+              <input type="text" class="feedback-input" placeholder="Elon"
+            /></label>
+            <label
+              >Last Name
+              <input type="text" class="feedback-input" placeholder="Musk"
+            /></label>
+            <label
+              >Email
+              <input
+                type="email"
+                required
+                class="feedback-input"
+                placeholder="elon.musk@itookoverchina.com"
+            /></label>
+            <br />
+            <label
+              >Date of birth <input type="date" class="feedback-input"
+            /></label>
+            <br />
+            <label for="question">Why would you like to contact us?</label>
+            <select id="question" class="feedback-input">
+              <option value="--Please choose an option--">
+                --Please choose an option--
+              </option>
+              <option value="Subscription">Suscribe</option>
+              <option value="Questions">Questions & Suggestions</option>
+              <option value="Article">Submit an article</option>
+            </select>
 
+            <br />
+            <label
+              >Message:
+              <textarea
+                class="input-msg"
+                name="message"
+                rows="5"
+                cols="33"
+                maxlength="500"
+                placeholder="Write your message here..."></textarea>
+            </label>
+            <br />
+            <label><input type="submit" value="Submit" id="submitBtn" /></label>
+          </form>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
     <script src="./src/index.js"></script>
     <script src="./src/getWeather.js"></script>
+    <script src="./src/burger.js"></script>
+    <script src="./src/zoom.js"></script>
+    <script src="./src/modal.js"></script>
+    <script src="./src/scaleUp.js"></script>
   </body>
 </html>
