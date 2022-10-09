@@ -23,7 +23,7 @@
   left: 50%;
   transform: translate(-50%, -20%);
   background-color: white;
-  width: 40vw;
+  width: 70vw;
   height: auto;
   overflow: hidden;
   text-align: center;
@@ -38,6 +38,12 @@
   animation-duration: 0.6s;
 }
 
+@media screen and (min-width: 769px) {
+  #submitModal {
+  width: 40vw;
+}
+}
+
 .msgClose {
   -webkit-animation-name: slideOut2 !important;
   -webkit-animation-duration: 2s !important;
@@ -47,7 +53,7 @@
 
 #msgText {
   text-align: center;
-  padding: 2vh 0;
+  padding: 2vh 2vw;
   font-size: 1.1rem;
 }
 
@@ -206,6 +212,7 @@ form {
   margin-bottom: 1vh;
   margin-top: 1vh;
   outline: 0;
+  -webkit-appearance: none;
 }
 
 .input-msg {
@@ -246,6 +253,7 @@ textarea {
     transition: all 0.3s;
     margin-top: -4px;
     font-weight: 700;
+    -webkit-appearance: none;
 }
 
 [type="submit"]:hover {

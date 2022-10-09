@@ -167,21 +167,22 @@ li:hover {
 
 #navBurger {
   display: none;
+  border-style: solid solid solid none;
   margin: 0;
   padding: 0 15vw;
   line-height: 2.5rem;
   background-color: white;
-  opacity: 92%;
-  -webkit-animation-name: slideBack;
+  -webkit-animation-name: slideSide;
   -webkit-animation-duration: 0.6s;
-  animation-name: slideBack;
+  animation-name: slideSide;
   animation-duration: 0.6s;
+  opacity: 92%;
+  box-shadow: 5px 5px 10px 5px gray;
 }
 
-.burgerOut {
-  display: block !important;
-  -webkit-animation-name: slideSide !important;
-  animation-name: slideSide !important;
+.burgerClose {
+-webkit-animation-name: slideBack !important;
+animation-name: slideBack !important;
 }
 
 @-webkit-keyframes slideSide {
