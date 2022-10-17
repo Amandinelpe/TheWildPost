@@ -15,8 +15,11 @@ async function getWeather() {
 
 async function weatherIcons() {
     await getWeather().then(data => {
+    console.log(data.current_weather.weathercode);
     switch(data.current_weather.weathercode) {
         case 3:
+            weatherInfo.innerHTML += `${Math.round(data.current_weather.temperature)}°C &#127780;&#65039;`
+            break;
         case 2:
             weatherInfo.innerHTML += `${Math.round(data.current_weather.temperature)}°C &#x2601;&#xFE0F;`
             break;

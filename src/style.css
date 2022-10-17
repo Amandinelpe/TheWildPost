@@ -37,14 +37,14 @@ div.container {
   background-size: 100vw 100vh;
   background-attachment: fixed;
   background-color: var(--primary-color);
-  color: var(--primary-text-color);
-  font-family: var(--vintage-font-family);
+  color: var(--primary-text-color) !important;
+  font-family: var(--vintage-font-family) !important;
 }
 
 .vintageStyle {
-  background-color: var(--primary-color);
-  color: var(--primary-text-color);
-  font-family: var(--vintage-font-family);
+  background-color: var(--primary-color) !important;
+  color: var(--primary-text-color) !important;
+  font-family: var(--vintage-font-family) !important;
 }
 
 .pageContent {
@@ -163,15 +163,49 @@ li:hover {
   z-index: 1;
 }
 
+/* fix slide Back animation */
+
 #navBurger {
   display: none;
+  border-style: solid solid solid none;
   margin: 0;
-  padding-left: 15vw;
-  padding-right: 15vw;
+  padding: 0 15vw;
   line-height: 2.5rem;
   background-color: white;
+  -webkit-animation-name: slideSide;
+  -webkit-animation-duration: 0.6s;
+  animation-name: slideSide;
+  animation-duration: 0.6s;
   opacity: 92%;
+  box-shadow: 5px 5px 10px 5px gray;
 }
+
+.burgerClose {
+-webkit-animation-name: slideBack !important;
+animation-name: slideBack !important;
+}
+
+@-webkit-keyframes slideSide {
+  from {transform: translate(-100%); opacity: 0}
+  to {transform: translate(0); opacity: 0.92
+  }}
+
+@keyframes slideSide {
+  from {transform: translate(-100%); opacity: 0}
+  to {transform: translate(0); opacity: 0.92
+  }}
+
+@-webkit-keyframes slideBack {
+  from {transform: translate(0); opacity: 0.92
+   }
+  to {transform: translate(-100%); opacity: 0
+  }}
+
+@keyframes slideBack {
+  from {transform: translate(0); opacity: 0.92
+  }
+ to {transform: translate(-100%); opacity: 0
+ }}
 
 .navDisplay {
   display: block;
@@ -297,7 +331,7 @@ footer p {
 .sticky {
   position: fixed;
   top: 0;
-  left: -8%;
+  left: -7.5%;
   width: 115%;
   z-index: 1;
   background-color: white;
@@ -316,6 +350,7 @@ footer p {
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 10px 5px gray; 
   box-shadow: 5px 5px 10px 5px gray;
+  background-color: white;
 
 }
 
